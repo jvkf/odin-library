@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
+  <script src="https://kit.fontawesome.com/0429980843.js" crossorigin="anonymous"></script>
+  <title>Library</title>
+</head>
+
+<body>
+  <header>
+    <h1>Good Library</h1>
+  </header>
+  <main>
+    <button class="button--add-book"><i class="fa-solid fa-arrow-right"></i>Add a new book</button>
+    <div class="form-container">
+      <div class="form-overlay form-exit"></div>
+      <form id="book-form" class="form-book">
+        <h2>Add a new book!</h2>
+        <fieldset class="form-book_container">
+          <legend>Information:</legend>
+          <label for="book">Book's title</label>
+          <input type="text" name="book" id="book" placeholder="The Hobbit" required>
+          <label for="author">
+            Book's author
+          </label>
+          <input type="text" name="author" id="author" placeholder="J. R. R. Tolkien" required>
+          <label for="pages">Number of pages</label>
+          <input type="number" name="pages" id="pages" placeholder="290" required>
+          <div class="form-book_flex">
+            <label for="hasReadYes">Have you read the book?</label>
+            <input type="checkbox" name="hasRead" id="hasReadYes">
+          </div>
+        </fieldset>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+    <ul id="cards-container" class="cards-container"></ul>
+  </main>
+  <footer>
+    <p>Made by <a href="http://github.com/jvkf">Jota</a></p>
+  </footer>
+</body>
+
+</html>
